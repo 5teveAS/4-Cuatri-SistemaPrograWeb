@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Lista de Prospectos</title>
+    </h:head>
+    <body>
+
+        <ui:composition template="./../resources/templates/plantilla.xhtml">
+
+            <ui:define name="content">
+                <div id="main-container" style="float: right; color: white">
+                    <a href="registro.xhtml" style="width: 170px; color: white;" class="btn btn-green" onclick="window.location.href = 'registro.xhtml'"> Agregar Prospecto</a>
+                </div>
+                <h:form>
+                    <div style="margin-top: 2%">
+                    <b:container fluid="true">
+                        <b:panel title="Lista De Prospectos" look="primary" collapsible="false">
+                            <b:dataTable value="#{prospectoController.prospectos}"
+                                         var="prospecto"
+                                         excel="true"
+                                         csv="true"
+                                         pdf="true"
+                                         columnVisibility="true"
+                                         copy="true"
+                                         print="true">
+                                <b:dataTableColumn value="#{prospecto.idProspecto}" 
+                                                   label="Identificacion"
+                                                   width="9%"
+                                                   />
+                                <b:dataTableColumn value="#{prospecto.nombre}" 
+                                                   label="Nombre"
+                                                   width="15%"
+                                                   />
+                                <b:dataTableColumn value="#{prospecto.apellido1}" 
+                                                   label="Primer Apellido"
+                                                   width="10%"
+                                                   />
+                                <b:dataTableColumn value="#{prospecto.apellido2}" 
+                                                   label="Segundo Apellido"
+                                                   width="10%"
+                                                   />
+                                <b:dataTableColumn value="#{prospecto.fechaNacimiento}" 
+                                                   label="F. Nacimiento"
+                                                   width="10%"
+                                                   />
+                                <b:dataTableColumn value="#{prospecto.fechaGraduacionColegio}" 
+                                                   label="F. Graduacion de Colegio"
+                                                   width="10%"
+                                                   />
+                                <b:dataTableColumn value="#{prospecto.fechaPosibleIngreso}" 
+                                                   label="F. Posible Ingreso"
+                                                   width="8%"
+                                                   />
+                                 <b:dataTableColumn value="#{prospecto.correo}" 
+                                                   label="Correo"
+                                                   width="8%"
+                                                   />
+                                  <b:dataTableColumn value="#{prospecto.celular}" 
+                                                   label="Celular"
+                                                   width="10%"
+                                                   />
+                               
+
+
+                            </b:dataTable>
+                        </b:panel>
+                    </b:container>
+                    </div>
+                </h:form> 
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
