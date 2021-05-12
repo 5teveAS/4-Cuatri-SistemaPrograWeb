@@ -1,0 +1,104 @@
+body {
+
+    background: url(images/mountain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#login {
+    
+    font-family: Garamond Bold;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+
+}
+* {
+    box-sizing: border-box;
+
+}
+.icon{
+    height: 100%;
+    text-align: center;
+    color: black;
+    border: black;
+    width: 30px;
+        
+    float: left;
+}
+.controls{
+    width: 82%;
+    margin-right: 10%;
+    float: right;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid green;
+    font-family: 'calibri';
+    font-size: 18px;
+    
+}
+.form-register{
+    
+    width: 400px;
+/*    height: 400px;*/
+/*    background: #1d4173;*/
+background: white;
+    padding: 30px;
+    margin: auto;
+/*    CENTRAR CONTENEDOR DEL FORMULARIO*/
+    margin-top: 170px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.form-register .botons{
+    width: 82%;
+font-family: Garamond Bold;
+    font-weight: bold;
+    margin-left: 8%;
+    font-size: 20px;
+    background: #34eb02;
+    border: 1px solid green;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+/*    margin-right: 10%;
+    float: right;
+    */
+/*    margin: 16px 0;*/
+    
+
+}
+.botons:hover{
+    background: #27ad02;
+}
+.botons:active{
+    background: #1d8500;
+}
+img{
+    float: left;
+}
+#header{
+
+ 
+    min-height: 10px;
+    min-width: 20px;
+    color: #34eb02;
+    text-align: center;
+    width: 40%;
+    height: 30%;
+}
+#empresa{
+    font-family: Titania;
+    font-size: 20px;
+}
